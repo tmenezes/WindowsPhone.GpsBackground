@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneApp.GpsBackground", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneApp.GpsBackground.Schedule", "PhoneApp.GpsBackground.Schedule\PhoneApp.GpsBackground.Schedule.csproj", "{51470684-735F-4FD9-A7B4-05199330C415}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneApp.GpsBackground.Util", "PhoneApp.GpsBackground.Util\PhoneApp.GpsBackground.Util.csproj", "{424C6287-E0AD-475B-A72F-0B23E6D88FA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{51470684-735F-4FD9-A7B4-05199330C415}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51470684-735F-4FD9-A7B4-05199330C415}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51470684-735F-4FD9-A7B4-05199330C415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{424C6287-E0AD-475B-A72F-0B23E6D88FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{424C6287-E0AD-475B-A72F-0B23E6D88FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{424C6287-E0AD-475B-A72F-0B23E6D88FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{424C6287-E0AD-475B-A72F-0B23E6D88FA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

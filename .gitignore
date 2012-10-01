@@ -4,3 +4,8 @@ obj
 
 # mstest test results
 TestResults
+*.suo
+bin
+Bin
+obj
+Obj
