@@ -4,6 +4,7 @@ using System.Device.Location;
 using System.Threading;
 using System.Windows;
 using Microsoft.Phone.Scheduler;
+using PhoneApp.GpsBackground.Util;
 
 namespace PhoneApp.GpsBackground.Schedule
 {
@@ -11,7 +12,8 @@ namespace PhoneApp.GpsBackground.Schedule
     {
         private static volatile bool _classInitialized;
         private IGeoPositionWatcher<GeoCoordinate> gpsWatcher;
-        private static List<GeoCoordinate> _pontosMapeados = new List<GeoCoordinate>();
+        private static readonly List<GeoCoordinate> _pontosMapeados = new List<GeoCoordinate>();
+        private static readonly PontosIsoStorage _pontosIsoStorage = new PontosIsoStorage();
 
 
 
@@ -74,7 +76,8 @@ namespace PhoneApp.GpsBackground.Schedule
 
         private void SalvarPontosMapeados()
         {
-
+            _pontosIsoStorage.Write(_pontosMapeados);
+            //var pontos = _pontosIsoStorage.Read();
         }
 
         private IGeoPositionWatcher<GeoCoordinate> GetGpsWatcher()
